@@ -56,7 +56,6 @@ public:
         size++;
     }
 
-    //begin и end будут с маленькой буквы, потому что иначе не будет работать range-based for
     /*T* begin() {
         return data;
     }
@@ -138,7 +137,6 @@ std::istream& operator >> (std::istream& is, TSortType& elem) {
 }
 
 std::ostream& operator << (std::ostream& is, TSortType& elem) {
-    //return is << std::setw(20) << elem.key << '\t' << std::setw(64) << elem.value;
     return is << elem.key << ' ' << elem.value;
 }
 
